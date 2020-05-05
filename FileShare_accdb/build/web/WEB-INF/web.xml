@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>NewServlet</servlet-name>
+        <servlet-class>EncryptionDecryption.NewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewServlet</servlet-name>
+        <url-pattern>/NewServlet</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>otp</servlet-name>
+        <servlet-class>way2sms.otp</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Ftpcon</servlet-name>
+        <servlet-class>FileUpload.Ftpcon</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Upload</servlet-name>
+        <servlet-class>FileUpload.Upload</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>otp</servlet-name>
+        <url-pattern>/otp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Ftpcon</servlet-name>
+        <url-pattern>/Ftpcon</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Upload</servlet-name>
+        <url-pattern>/Upload</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
